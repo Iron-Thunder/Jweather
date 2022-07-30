@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(79, 76, 76);
+    background-image: url('w2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card{
+    background:  #000000d5;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.4em;
+}
+button{
+    margin: 0.5em;
+    margin-bottom: 1.7em;
+    border-radius: 50%;
+    border: none;
+    height: 2.7em;
+    width: 2.7em;
+    outline: none;
+    color: white;
+    background: #7c7c7c2b;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background: #9b97976b;
+}
+input.search-bar{
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    color: white;
+    background: #7c7c7c2b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    width: 80%;
+    margin-bottom: 1em;
+    
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading . . .";
+    color: white;
+    position: absolute;
+    top:0;
+}
